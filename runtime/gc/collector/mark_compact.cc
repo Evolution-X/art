@@ -1435,7 +1435,7 @@ bool MarkCompact::PrepareForCompaction() {
     if (!use_move_ioctl_) {
       // TODO: add logic to also get reported on pitot as the below log
       // message will get lost in the logcat.
-      LOG(WARNING) << "userfaultfd: MOVE ioctl seems unsupported: " << strerror(errno);
+      //LOG(WARNING) << "userfaultfd: MOVE ioctl seems unsupported: " << strerror(errno);
     }
   }
   return true;
